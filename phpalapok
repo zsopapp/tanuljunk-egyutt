@@ -10,9 +10,6 @@
     </style>
 </head>
 <body>
-    <h2 class="php">A PHP info lekerdezese</h2>
-    
-    <?php print phpinfo(); ?>
     
     <h2 class="php">Valtozok bevezetese es egy muvelet a valtozokkal</h2>
     
