@@ -88,5 +88,37 @@
           akkor eredmeny keppen 1-et kapunk.*/
     ?>
 
+    <h2 class="php">Tipus modositasa TIPUSATALAKITASSAL</h2>
+    
+    <?php
+        print '----------------------------- <br />';
+        print 'Double >> Integer<br />';
+        $tizedesszam = 3.18;
+        $egesszam = (integer) $tizedesszam;
+        print gettype ($egesszam) . '<br />'; //A sortores egy sorba kerul az utasitassal
+        print var_dump ($egesszam) . '<br />';
+        print $egesszam . '<br />';
+        print '----------------------------- <br />';
+        print 'Double >> String <br />';
+        $karakterlanc = (string) $tizedesszam;
+        print gettype ($karakterlanc) .'<br />';
+        print var_dump ($karakterlanc) . 'Zarojelben a karakterek szama <br />'; 
+        print $karakterlanc . '<br />';
+        print '----------------------------- <br />';
+        print 'Double >> Boolean <br />';
+        $logikaivaltozo = (boolean) $tizedesszam;
+        print gettype ($logikaivaltozo) . '<br />';
+        print var_dump ($logikaivaltozo) . '<br />';
+        ?>
+        <?php
+        $tizedes_szam = 3.14;
+        print gettype ( $tizedes_szam );
+        print ($tizedes_szam);
+        print '<br />';
+        $atakitott = (integer) $tizedes_szam;
+        print gettype ( $atakitott );
+        print ( $atakitott );
+    ?>
+    
 </body>
 </html>
