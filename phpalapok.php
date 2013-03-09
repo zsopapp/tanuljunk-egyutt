@@ -120,5 +120,17 @@
         print ( $atakitott );
     ?>
     
+    <h2 class="php">A tipus atalakitas egyeb modszerei</h2>
+    
+    <?php
+        $tizedes_szam = 3.14;
+        print gettype ( $tizedes_szam );
+        print ($tizedes_szam);
+        print '<br />';
+        $atakitott = intval ( $tizedes_szam );
+        print gettype ( $atakitott );
+        print ( $atakitott );
+    ?>
+    
 </body>
 </html>
