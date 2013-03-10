@@ -132,5 +132,30 @@
         print ( $atakitott );
     ?>
     
+    <h2 class="php">Aritmetikai muveletek</h2>
+    
+    <?php
+        print 'Ket valtozot deklaralunk, $ot es $harom';
+        print '<br />';
+        $ot = 5;
+        $harom = 3;
+        print 'Ot meg harom az egyenlo: ' . ($ot + $harom);
+        print '<br />';
+        print 'Otszor harom az egyenlo: ' . ($ot * $harom);
+        print '<br />';
+        print 'Ot minusz harom az egyenlo: ' . ($ot - $harom);
+        print '<br />';
+        print 'Ot osztva harommal az egyenlo: ' . ($ot / $harom);
+        print '<br />';
+        print 'Maradekkepzes: ' . ($ot % $harom);
+        print '<br />';
+        print 'Bevezetunk egy harmadik valtozot $eredmeny ami $ot es $harom osszege';
+        print '<br />';
+        $eredmeny = ($ot+$harom);
+        /*Eloszor mindig be kell vezetnunk "deklaralnunk kell" a valtozot
+        es csak azutan tudunk erteket adni neki"*/
+        print var_dump ($eredmeny);
+    ?>
+    
 </body>
 </html>
