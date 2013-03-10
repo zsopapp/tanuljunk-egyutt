@@ -169,5 +169,23 @@
         azt a PHP feldolgozza.*/
     ?>
     
+    <h2 class="php">Osszetett ertekado muveletek</h2>
+
+    <?php
+        print 'Az osszetett ertekado muveletek egy hagyomanyos muveleti jelbol es az <br />
+        azt koveto egyenlosegjelbol allnak. Pl.: <br />';
+        $x = 4;
+        print var_dump ($x) . '<br />';
+        $x += 4;
+        print var_dump ($x) . '<br />';
+        print 'Ertekado muvelet eseten tehat ismernunk kell a valtozo erteket aminek ujabb erteket adunk. <br />
+        Jelen esetben ez $x = 4. Igy is novelhetnenek $x erteket: <br />
+        $x = $x + 4. Erteke igy $x-nek 8. Oszetett ertekado muvelettel <br />
+        $x = 4;<br />
+        $x +=4; ugyszinten 8 <br />';
+        print 'Vagyis ennek alapjan ha $x = ' . $x = 4 . '<br />';
+        print 'haromszor negy az = ' . $x *= 3;
+    ?>
+    
 </body>
 </html>
