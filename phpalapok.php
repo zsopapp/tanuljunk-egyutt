@@ -157,5 +157,17 @@
         print var_dump ($eredmeny);
     ?>
     
+    <h2 class="php">Osszefuzes</h2>
+    
+    <?php
+        $szo1 = 'A php';
+        $szo2 ='egy remek';
+        $szo3 = 'programozasi nyelv!';
+        print 'Ime a harom valtozo egymas utan:'." $szo1 $szo2 $szo3";
+        /* A pont az osszefuzesben segit. Az egyes idezojelbe tett karakterlanc
+        nem kerul feldolgozasra csak kiiratasra. Ami viszont kettos idezojelben van
+        azt a PHP feldolgozza.*/
+    ?>
+    
 </body>
 </html>
