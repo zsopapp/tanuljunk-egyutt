@@ -205,5 +205,24 @@
         print var_dump ($x >= 5) . '<br />'; // A valtozo ertekenagyobb vagy egyenlo mint 5?
     ?>
     
+    <h2 class="php">Osszehasonlito kifejezesek letrehozasa logikai muveletekkel</h2>
+    
+    <?php
+        print 'A <b>logikai muveleti jelek</b> logikai ertekeken vegeznek muveleteket. Pl.: <br />';
+        print '$x = 7';
+        print '( $x > 2 ) && ( $x < 15 ) <br />';
+        $x = 7;
+        print 'Mivel a bal es a jobb tenyezo is igaz azeredmeny: ';
+        print var_dump ( $x > 2 ) && ( $x < 15 );
+        print '<br />';
+        print 'Logikai muveleti jelek: <br />';
+        print '<b>II</b> : vagy, a bal vagy a jobb tenyezo igaz <br />';
+        print '<b>or</b> : vagy, a bal vagy a jobb tenyezo igaz <br />';
+        print '<b>xor</b> : kizaro vagy, vagy a bal vagy a jobb tenyezo igaz de csak az egyikuk <br />';
+        print '<b>&&</b> : es, a bal es a jobb tenyezo is igaz <br />';
+        print '<b>and</b> : es, a bal es a jobb tenyezo is igaz <br />';
+        print '<b>!</b> : nem, az egyetlen tenyezo hamis <br />';
+    ?>
+    
 </body>
 </html>
