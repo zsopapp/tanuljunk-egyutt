@@ -187,5 +187,23 @@
         print 'haromszor negy az = ' . $x *= 3;
     ?>
     
+    <h2 class="php">Osszehasonlito muveletek</h2>
+    
+    <?php
+        print 'Az osszehasonlito muveletek a tenyezokon vizsgalatokat vegeznek<br />
+        es logikai ertekkel ternek vissza. Ertekuk tehat "true" lesz ha a feltetelezett</br />
+        viszony fennall es "false" ha nem. Ez a tipusu kifejezes az olyan vezerlesi<br />
+        szerkezetekben hasznos mint az "if" vagy a "while" utasitasok.<br />
+        Az alabbi peldakban $x erteke minden esetben 4.<br />';
+        $x = 4;
+        print var_dump ($x == 5) . '<br />'; // A ket ertek megegyezik?
+        print var_dump ($x != 5) . '<br />'; // A ket ertek nem egyenlo?
+        print var_dump ($x === 5) . '<br />'; // A ket ertek tipusa es erteke megyeggyezik?
+        print var_dump ($x < 5) . '<br />'; // A valtozo erteke kisebb mint 5?
+        print var_dump ($x > 5) . '<br />'; // A valtozo erteke nagyobb mint 5?
+        print var_dump ($x <= 5) . '<br />'; // A valtozo erteke kisebb vagy egyenlo mint 5?
+        print var_dump ($x >= 5) . '<br />'; // A valtozo ertekenagyobb vagy egyenlo mint 5?
+    ?>
+    
 </body>
 </html>
