@@ -267,5 +267,15 @@
         print var_dump ($x) . '<br />';
     ?>
     
+    <h2 class="php">Allandok (konstansok)</h2>
+    
+    <?php
+        define ( "FELHASZNALO" , "Abigail" );
+        print 'Udvozlom kedves ' . FELHASZNALO;
+    ?>
+    
+    <?php
+        define ( "FELHASZNALO" , "Abigail" , true );
+    ?>
 </body>
 </html>
