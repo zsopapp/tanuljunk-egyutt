@@ -224,5 +224,48 @@
         print '<b>!</b> : nem, az egyetlen tenyezo hamis <br />';
     ?>
     
+    <h2 class="php">Egesz tipusu valtozok ertekenek automatikus novelese vagy csokkentese</h2>
+    
+    <?php
+        print 'A PHP programpzas soran gyakran kerulunk olyan helyzetbe, hogy egy egesz<br />
+        tipusu valtozo erteket egyel novelni vagy csokkenteni kell. <br />
+        Ez jellemzoen akkor szokott elofordulni amikor egy ciklusban szamolunk valamit. <br />
+        Ket modjat mar ismerjuk. <br />';
+        print 'Novelhetjuk osszeado muveleti jellel: $x = 4, $x = ($x + 1) <br />';
+        print $x = 4 .'<br />';
+        print $x = ($x + 1) . '<br />';
+        print 'Vagy novelhetjuk osszetett ertekado muvelettel: $x = 4 ,$x +=1. $x erteke eggyel no.<br />';
+        print $x = 4 . '<br />';
+        print $x += 1 .'<br />';
+        print '<br />Az eredmeny mindket esetben modositja $x erteket, $x-be bele kerul.<br />
+        mivel az ilyen kifejezesek nagyon gyakoriak a PHP kulonleges muveleteket biztosit <br />
+        az egesz tipusu valtozok eggyel torteno novelesere ill. csokkentesere. <br />
+        Ezeket a muveleteket nevezzuk <b>utotagos csokkentesnek, novelesnek</b>
+        Az utotagkent hasznalt novelo muveleti jel a valtozo neve utani ket ++ jelbol all <br />
+        $x = 4, $x++ viszont mar 5. <br />';
+        $x = 4;
+        $x++;
+        print $x;
+        print '<br />Hasonlokeppen ket -- jelet irunk a valtozo neve utan ha csokkentunk eggyel. <br />
+        $x = 4, $x-- viszont mar 3. <br />';
+        $x = 4;
+        $x--;
+        print $x;
+    ?>
+    <br />
+    <?php
+        $x = 3;
+        print var_dump ($x++ < 4); // $x erteke meg mindig harom
+        print var_dump ($x); // $x erteke mar 4
+    ?>
+    <br />
+    <?php
+        print 'Egyes esetekben szukseg lehet ra, hogy a valtozo erteke meg a kiertekeles elott <br />
+        csokkenjen van nojon. Ilyen esetekben a muveleti jelek a valtozo ele kerulnek.<br />';
+        $x = 3;
+        print var_dump (++$x < 4) .'<br />';
+        print var_dump ($x) . '<br />';
+    ?>
+    
 </body>
 </html>
