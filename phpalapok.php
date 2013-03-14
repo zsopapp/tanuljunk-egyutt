@@ -294,5 +294,24 @@
         }
     ?>
     
+    <h2 class="php">Az "if" utasitas "else" aga</h2>
+    
+    <?php
+        $elegedett = "nagyon";
+        if ( $elegedett == "nagyon") {
+            print "Orulunk hogy elegedett szolgaltatasunkkal.";
+        } else {
+            print "Kerjuk ertekelje szolgaltatasunkat!";
+        }
+    ?>
+    
+        <?php
+        // $elegedett = "nagyon";
+        if ( $elegedett == "nagyon") {
+            print "Orulunk hogy elegedett szolgaltatasunkkal.";
+        } else {
+            print "Kerjuk ertekelje szolgaltatasunkat!";
+        }
+    ?>
 </body>
 </html>
