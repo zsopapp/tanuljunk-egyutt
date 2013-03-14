@@ -277,5 +277,22 @@
     <?php
         define ( "FELHASZNALO" , "Abigail" , true );
     ?>
+    
+    <h2 class="php">Az "if" utasitas</h2>
+    
+    <?php
+        $elegedett = "nagyon";
+        if ( $elegedett == "nagyon") {
+            print "Orulunk, hogy elegedett szolgaltatasunkkal!";
+        }
+    ?>
+    
+    <?php
+        $elegedett = 8;
+        if ( $elegedett <= 10 ) {
+            print "A szam erteke kisebb mint 10";
+        }
+    ?>
+    
 </body>
 </html>
