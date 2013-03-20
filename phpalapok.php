@@ -313,5 +313,28 @@
             print "Kerjuk ertekelje szolgaltatasunkat!";
         }
     ?>
+    
+    <h2 class="php">A "switch" utasitas</h2>
+    
+    <?php
+        $eredeti = "malna";
+        
+            switch ($eredeti) {
+                
+                case "malna": // Abban az esetben ha $eredeti erteke malna
+                    echo "A " . "$eredeti" . " is egy gyumolcs"; // ird ki ezt
+                    break;
+                case "szolo"; // Abban az ha $eredeti erteke szolo
+                    echo "A " . "$eredeti" . " is finom gyumolcs"; // ird ki ezt
+                    break;
+                case "citrom": // Abban az ha $eredeti erteke citrom
+                    echo "A " . "$eredeti" . " nagyon savanyu de az is gyumolcs";
+                    break;
+                default: // Ha semmi sincs megadva
+                    echo "Valamit meg kell adnod"; // Akkor ird ki ezt
+    
+                    }
+            
+            ?>
 </body>
 </html>
