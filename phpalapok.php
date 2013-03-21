@@ -316,13 +316,17 @@
     
     <h2 class="php">Az "if" utasitas "elseif" aga</h2>
     
-    <?php
+	<?php
 		$t=date("H");
-			if (($t>="9") && ($t<="10")) { echo "Ne legyel hulye, dolgozz!"; }
-				elseif (($t>="10") && ($t<="11")) { echo "Nemsoka jon az ebed";}
-				elseif ($t="16") { echo "Vege a munkaidonek, mehetsz haza";}
-				elseif (($t>"16") && ($t<"20")) { echo "Szabad foglalkozas, azt csinalsz amit akarsz";}
-					else { echo "Itt az ido eltenni magad holnapra" ;}				
+		echo $t . " ora van. ";
+
+			if (($t>="9") && ($t<"10")) { echo "Ne legyel hulye, dolgozz!"; }
+				elseif (($t>="10") && ($t<"12")) { echo "Nemsoka jon az ebed"; }
+				elseif (($t>="12") && ($t<"17")) { echo "Vissza a meloba megint"; }
+				elseif (($t>="17") && ($t<"19")) { echo "Vege a munkaidonek, mehetsz haza"; }
+				elseif (($t>="19") && ($t>"22")) { echo "Szabad foglalkozas, azt csinalsz amit akarsz"; }
+					else { echo "Szep almokat! Itt az ido eltenni magad holnapra" ; }
+				
 	?>
     
     <h2 class="php">A "switch" utasitas</h2>
