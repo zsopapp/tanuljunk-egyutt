@@ -314,6 +314,17 @@
         }
     ?>
     
+    <h2 class="php">Az "if" utasitas "elseif" aga</h2>
+    
+    <?php
+		$t=date("H");
+			if (($t>="9") && ($t<="10")) { echo "Ne legyel hulye, dolgozz!"; }
+				elseif (($t>="10") && ($t<="11")) { echo "Nemsoka jon az ebed";}
+				elseif ($t="16") { echo "Vege a munkaidonek, mehetsz haza";}
+				elseif (($t>"16") && ($t<"20")) { echo "Szabad foglalkozas, azt csinalsz amit akarsz";}
+					else { echo "Itt az ido eltenni magad holnapra" ;}				
+	?>
+    
     <h2 class="php">A "switch" utasitas</h2>
     
     <?php
