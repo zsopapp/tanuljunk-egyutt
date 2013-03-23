@@ -362,5 +362,18 @@
                 // Vegul szamlalo ertekehez adj hozza egyet 
             }
     ?>
+
+    <h2 class="php">A "do .. while" ciklus</h2>
+    
+    <?php
+        $szam = 1;
+        // $szam valtozo erteke 1
+            do {
+                print "Vegrehajtasok szama: $szam <br />\n";
+                $szam++;
+                // Ez a programresz mindenkeppen lefut de ...
+            } while ( $szam > 200 && $szam < 400 );
+            // $szam erteke csak akkor fog eggyel megnoni ha kezdeti erteke 200 es 400 kozott van
+    ?>
 </body>
 </html>
