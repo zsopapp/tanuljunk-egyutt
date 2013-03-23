@@ -316,17 +316,14 @@
     
     <h2 class="php">Az "if" utasitas "elseif" aga</h2>
     
-	<?php
+    <?php
 		$t=date("H");
-		echo $t . " ora van. ";
-
-			if (($t>="9") && ($t<"10")) { echo "Ne legyel hulye, dolgozz!"; }
-				elseif (($t>="10") && ($t<"12")) { echo "Nemsoka jon az ebed"; }
-				elseif (($t>="12") && ($t<"17")) { echo "Vissza a meloba megint"; }
-				elseif (($t>="17") && ($t<"19")) { echo "Vege a munkaidonek, mehetsz haza"; }
-				elseif (($t>="19") && ($t>"22")) { echo "Szabad foglalkozas, azt csinalsz amit akarsz"; }
-					else { echo "Szep almokat! Itt az ido eltenni magad holnapra" ; }
-				
+                
+			if (($t>="9") && ($t<="10")) { echo "Ne legyel hulye, dolgozz!"; }
+				elseif (($t>="10") && ($t<="11")) { echo "Nemsoka jon az ebed";}
+				elseif ($t="16") { echo "Vege a munkaidonek, mehetsz haza";}
+				elseif (($t>"16") && ($t<"22")) { echo "Szabad foglalkozas, azt csinalsz amit akarsz";}
+					else { echo "Itt az ido eltenni magad holnapra" ;}				
 	?>
     
     <h2 class="php">A "switch" utasitas</h2>
@@ -350,6 +347,20 @@
     
                     }
             
-            ?>
+    ?>
+    
+    <h2 class="php">A "while" ciklus</h2>
+    
+    <?php
+        $szamlalo = 1 ;
+        // $szamlalo erteke 1
+            while ( $szamlalo <=12 ) {
+            // Amig szamlalo erteke kisebb vagy egyenlo mint 12
+                echo "$szamlalo ketszerese " . ($szamlalo * 2) . "<br />" ;
+                // Addig ird ki a szoveget majd szamlalo erteket szorozd meg kettovel
+                $szamlalo++;
+                // Vegul szamlalo ertekehez adj hozza egyet 
+            }
+    ?>
 </body>
 </html>
