@@ -383,5 +383,27 @@
             print "$szamlalo ketszerese " . ( $szamlalo*2) . "<br />";
         }
     ?>
+    
+    <h2 class="php">A "for" Ciklus elhagyasa "break" utasitas segitsegevel</h2>
+    
+    <?php
+	/* $szamlalo erteke 1-el indul. Ha szamlalo erteke kisebb vagy egyenlo 10
+	akkor szamlalo erteket noveld eggyel */
+	for ( $szamlalo = -1; $szamlalo <= 10; $szamlalo++ ) {
+	    $eredmeny = 4000/$szamlalo;
+	    print "4000 $szamlalo reszre osztva $eredmeny<br />";
+	    }
+    ?>
+	
+    <?php
+	$szamlalo = -4; 
+	    for ( ; $szamlalo <= 10; $szamlalo++ ) {
+		if ( $szamlalo == 0 )
+		break;
+		} {
+		    $eredmeny = 4000 / $szamlalo;
+		    print "4000 $szamlalo reszre osztva $eredmeny<br />";
+		}
+    ?>
 </body>
 </html>
