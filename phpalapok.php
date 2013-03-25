@@ -375,5 +375,13 @@
             } while ( $szam > 200 && $szam < 400 );
             // $szam erteke csak akkor fog eggyel megnoni ha kezdeti erteke 200 es 400 kozott van
     ?>
+    
+    <h2 class="php">A "for" ciklus</h2>
+    
+    <?php
+        for ( $szamlalo = 1; $szamlalo <= 12; $szamlalo++ ) {
+            print "$szamlalo ketszerese " . ( $szamlalo*2) . "<br />";
+        }
+    ?>
 </body>
 </html>
