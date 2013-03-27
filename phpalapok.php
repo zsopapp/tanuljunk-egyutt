@@ -435,5 +435,31 @@
     print "</table>\n";
     ?>
     
+    <h2 class="php">Kodblokkok es bongeszobe irt kimenet</h2>
+    
+    <?php
+    $ar_megjelenit = true;
+    
+        if ( $ar_megjelenit ); {
+            print "<table border=\"1\">";
+            print "<tr><td colspan =\"3\">";
+            print "A mai arak dollarban";
+            print "</td></tr><tr>";
+            print "<td>14</td><td>32</td><td>71</td>";
+            print "</tr></table>";
+        }
+    ?>
+
+    <?php
+        $ar_megjelenit = true;
+        if ( $ar_megjelenit ); {
+        ?>
+        <table border= "1">
+        <tr><td colspan= "3">Amai arak dollarban</td></tr><tr>
+        <td>14</td><td>32</td><td>71</td>
+        </tr></table>
+        <?php
+        }
+    ?>
 </body>
 </html>
