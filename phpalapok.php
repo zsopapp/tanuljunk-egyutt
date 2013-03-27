@@ -405,5 +405,18 @@
 		    print "4000 $szamlalo reszre osztva $eredmeny<br />";
 		}
     ?>
+    
+    <h2 class="php">A continue utasitas</h2>
+    
+    <?php
+    $szamlalo = -4; 
+        for ( ; $szamlalo <= 10; $szamlalo++ ) {
+            if ( $szamlalo == 0 ) {
+            continue;
+        } 
+            $seged = 4000 / $szamlalo;
+            print "4000 $szamlalo reszre osztva $seged<br />";
+        }
+    ?>
 </body>
 </html>
