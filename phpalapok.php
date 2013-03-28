@@ -461,5 +461,19 @@
         <?php
         }
     ?>
+    
+    <h2 class="php">Fuggvenyek letrehozasa</h2>
+    
+    <?php
+    
+        function osszead ($szam1, $szam2) {
+                echo ($szam1 + $szam2) . "<br />";
+        }
+        
+        osszead (4,5);
+        osszead (10,5);
+        osszead (20,5);
+    
+    ?>
 </body>
 </html>
