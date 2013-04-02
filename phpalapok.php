@@ -475,5 +475,29 @@
         osszead (20,5);
     
     ?>
+    
+    <h2 class="php">Ertek visszaadasa sajat fuggvenyekbol</h2>
+    
+    <?php
+        function osszeadas ( $elsoszam, $masodikszam) {
+            $eredmeny = $elsoszam + $masodikszam . '<br />' ;
+            return $eredmeny;
+        }
+        print osszeadas ( 3, 5 );
+        print osszeadas ( 9, 7 );
+        print osszeadas ( 10, 5 );
+        print osszeadas ( 2, 15 );
+        ?>
+        
+    <?php
+        function osszeszoroz ( $szorzando1, $szorzando2 ) {
+            $szorzat = $szorzando1 * $szorzando2 . '<br />' ;
+            return $szorzat;
+        }
+        print osszeszoroz ( 3, 5 );
+        print osszeszoroz ( 9, 7 );
+        print osszeszoroz( 10, 5 );
+        print osszeszoroz ( 2, 15 );
+    ?>
 </body>
 </html>
