@@ -349,6 +349,18 @@
             
     ?>
     
+    <h2 class="php">A ? muvelet</h2>
+    
+    <?php
+    $tipp = 10;
+    
+    $talalt = "Gratulalok eltalaltad!";
+    $nemtalalt = "Nen erre a szamra gondoltam";
+    
+    $szoveg = ($tipp == 7) ?$talalt : $nemtalalt;
+    print "$szoveg";
+    ?>
+    
     <h2 class="php">A "while" ciklus</h2>
     
     <?php
