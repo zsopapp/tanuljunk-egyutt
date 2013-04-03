@@ -349,6 +349,24 @@
             
     ?>
     
+    //Masik pelda ugyanerre
+    
+    <?php
+    $gondoltam = 7;
+    $tipp = 10;
+    
+            switch ($gondoltam) {
+                    case ($tipp < $gondoltam):
+                            echo "Nagyobbra gondoltam";
+                            break;
+                    case ($tip == $gondoltam):
+                            echo "Igen, kitalaltad!";
+                            break;
+                    default :
+                            echo "Kisebbre gondoltam";
+            }
+    ?>
+    
     <h2 class="php">A ? muvelet</h2>
     
     <?php
