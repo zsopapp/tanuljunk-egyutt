@@ -289,7 +289,7 @@
     
     <?php
         $elegedett = 8;
-        if ( $elegedett <= 10 ) {
+        if ( $elegedett < 10 ) {
             print "A szam erteke kisebb mint 10";
         }
     ?>
